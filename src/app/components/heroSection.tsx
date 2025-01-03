@@ -12,7 +12,6 @@ interface BlogCardProps {
   id: number;
   image: StaticImageData;
   title: string;
-  category: string;
   description: string;
   link: string;
 }
@@ -24,7 +23,6 @@ const HeroSection = () => {
       id: 1,
       image: firstImage,
       title: "A Brief History of AI",
-      category: "TECHNOLOGY",
       description:
         "Explore the fascinating journey of AI from its inception to modern advancements.",
       link: "/blogs/first-post",
@@ -33,7 +31,6 @@ const HeroSection = () => {
       id: 2,
       image: secondImage,
       title: "AI in the Modern World",
-      category: "SCIENCE",
       description:
         "Discover how AI is shaping industries and transforming the way we live.",
       link: "/blogs/second-post",
@@ -42,7 +39,6 @@ const HeroSection = () => {
       id: 3,
       image: thirdImage,
       title: "AI as a Collaborator",
-      category: "INNOVATION",
       description:
         "Learn about AI's role as a creative and productive collaborator in various fields.",
       link: "/blogs/third-post",
@@ -76,7 +72,6 @@ const HeroSection = () => {
               key={blog.id}
               image={blog.image}
               title={blog.title}
-              category={blog.category}
               description={blog.description}
               link={blog.link}
             />
